@@ -1,0 +1,173 @@
+---- AV_CODEC_ID_H264 Matches (172 in 68 files) ----
+Asfdec.c (libavformat):        if (st->codec->codec_id == AV_CODEC_ID_H264)
+Avcodec.h (libavcodec):    AV_CODEC_ID_H264,
+Avcodec.h (libavcodec): * codec = avcodec_find_decoder(AV_CODEC_ID_H264);
+Avienc.c (libavformat):    if (enc->codec_id == AV_CODEC_ID_H264 && enc->codec_tag == MKTAG('H','2','6','4') && pkt->size) {
+Codec_desc.c (libavcodec):        .id        = AV_CODEC_ID_H264,
+Concatdec.c (libavformat):    if (cat->auto_convert && st->codec->codec_id == AV_CODEC_ID_H264 &&
+Crystalhd.c (libavcodec):    case AV_CODEC_ID_H264:
+Crystalhd.c (libavcodec):    if (avctx->codec->id == AV_CODEC_ID_H264) {
+Crystalhd.c (libavcodec):    trust_interlaced = avctx->codec->id != AV_CODEC_ID_H264 ||
+Crystalhd.c (libavcodec):    .id             = AV_CODEC_ID_H264,
+Dashenc.c (libavformat):    .video_codec    = AV_CODEC_ID_H264,
+Decoding_encoding.c (doc\examples):    if (codec_id == AV_CODEC_ID_H264)
+Decoding_encoding.c (doc\examples):        video_encode_example("test.h264", AV_CODEC_ID_H264);
+Dxva2_h264.c (libavcodec):    .id             = AV_CODEC_ID_H264,
+Error_resilience.c (libavcodec):    if (s->avctx->codec_id == AV_CODEC_ID_H264) {
+Error_resilience.c (libavcodec):                        if (s->avctx->codec_id == AV_CODEC_ID_H264) {
+Error_resilience.c (libavcodec):                if (s->avctx->codec_id == AV_CODEC_ID_H264) {
+Error_resilience.c (libavcodec):                    av_assert0(s->avctx->codec_id != AV_CODEC_ID_H264);
+Ffmpeg.c:    if (  ost->enc_ctx->codec_id != AV_CODEC_ID_H264
+Ffmpeg.c:        if (ist->dec_ctx->codec_id == AV_CODEC_ID_H264) {
+Ffmpeg_dxva2.c:    { &DXVA2_ModeH264_F,         AV_CODEC_ID_H264 },
+Ffmpeg_dxva2.c:    { &DXVA2_ModeH264_E,         AV_CODEC_ID_H264 },
+Ffmpeg_dxva2.c:    { &DXVADDI_Intel_ModeH264_E, AV_CODEC_ID_H264 },
+Ffmpeg_dxva2.c:        else if (s->codec_id == AV_CODEC_ID_H264 && cfg->ConfigBitstreamRaw == 2)
+Ffmpeg_dxva2.c:    if (s->codec_id == AV_CODEC_ID_H264 || s->codec_id == AV_CODEC_ID_HEVC)
+Ffmpeg_dxva2.c:    if (s->codec_id == AV_CODEC_ID_H264 &&
+Ffserver_config.c:                           config->guessed_video_codec_id : AV_CODEC_ID_H264;
+Flvdec.c (libavformat):        return vcodec->codec_id == AV_CODEC_ID_H264;
+Flvdec.c (libavformat):        vcodec->codec_id = AV_CODEC_ID_H264;
+Flvdec.c (libavformat):        st->codec->codec_id == AV_CODEC_ID_H264 ||
+Flvdec.c (libavformat):        if (st->codec->codec_id == AV_CODEC_ID_H264 || st->codec->codec_id == AV_CODEC_ID_MPEG4) {
+Flvdec.c (libavformat):            st->codec->codec_id == AV_CODEC_ID_H264)) {
+Flvenc.c (libavformat):    { AV_CODEC_ID_H264,     FLV_CODECID_H264 },
+Flvenc.c (libavformat):        if (enc->codec_id == AV_CODEC_ID_AAC || enc->codec_id == AV_CODEC_ID_H264 || enc->codec_id == AV_CODEC_ID_MPEG4) {
+Flvenc.c (libavformat):                (enc->codec_id == AV_CODEC_ID_H264 || enc->codec_id == AV_CODEC_ID_MPEG4))
+Flvenc.c (libavformat):    else if (enc->codec_id == AV_CODEC_ID_H264 || enc->codec_id == AV_CODEC_ID_MPEG4)
+Flvenc.c (libavformat):    if (enc->codec_id == AV_CODEC_ID_H264 || enc->codec_id == AV_CODEC_ID_MPEG4) {
+Flvenc.c (libavformat):        else if (enc->codec_id == AV_CODEC_ID_H264 || enc->codec_id == AV_CODEC_ID_MPEG4) {
+Gxf.c (libavformat):            st->codec->codec_id = AV_CODEC_ID_H264;
+H264.c (libavcodec):    if (avctx->codec_id == AV_CODEC_ID_H264) {
+H264.c (libavcodec):    .id                    = AV_CODEC_ID_H264,
+H264.c (libavcodec):    .id             = AV_CODEC_ID_H264,
+H264dec.c (libavformat):FF_DEF_RAWVIDEO_DEMUXER(h264, "raw H.264 video", h264_probe, "h26l,h264,264,avc", AV_CODEC_ID_H264)
+H264_intrapred_init.c (libavcodec\x86):                codec_id == AV_CODEC_ID_H264) {
+H264_intrapred_init.c (libavcodec\x86):            if (codec_id == AV_CODEC_ID_SVQ3 || codec_id == AV_CODEC_ID_H264) {
+H264_intrapred_init.c (libavcodec\x86):            if (codec_id == AV_CODEC_ID_SVQ3 || codec_id == AV_CODEC_ID_H264) {
+H264_mb_template.c (libavcodec):    const int is_h264 = !CONFIG_SVQ3_DECODER || SIMPLE || h->avctx->codec_id == AV_CODEC_ID_H264;
+H264_parser.c (libavcodec):    .codec_ids      = { AV_CODEC_ID_H264 },
+H264_slice.c (libavcodec):                    avctx->codec_id != AV_CODEC_ID_H264 ||
+Hdsenc.c (libavformat):    .video_codec    = AV_CODEC_ID_H264,
+Hlsenc.c (libavformat):    .video_codec    = AV_CODEC_ID_H264,
+Ismindex.c (tools):            if (st->codec->codec_id == AV_CODEC_ID_H264)
+Isom.c (libavformat):    { AV_CODEC_ID_H264        , 0x21 },
+Isom.c (libavformat):    { AV_CODEC_ID_H264, MKTAG('a', 'v', 'c', '1') }, /* AVC-1/H.264 */
+Isom.c (libavformat):    { AV_CODEC_ID_H264, MKTAG('a', 'i', '5', 'p') }, /* AVC-Intra  50M 720p24/30/60 */
+Isom.c (libavformat):    { AV_CODEC_ID_H264, MKTAG('a', 'i', '5', 'q') }, /* AVC-Intra  50M 720p25/50 */
+Isom.c (libavformat):    { AV_CODEC_ID_H264, MKTAG('a', 'i', '5', '2') }, /* AVC-Intra  50M 1080p25/50 */
+Isom.c (libavformat):    { AV_CODEC_ID_H264, MKTAG('a', 'i', '5', '3') }, /* AVC-Intra  50M 1080p24/30/60 */
+Isom.c (libavformat):    { AV_CODEC_ID_H264, MKTAG('a', 'i', '5', '5') }, /* AVC-Intra  50M 1080i50 */
+Isom.c (libavformat):    { AV_CODEC_ID_H264, MKTAG('a', 'i', '5', '6') }, /* AVC-Intra  50M 1080i60 */
+Isom.c (libavformat):    { AV_CODEC_ID_H264, MKTAG('a', 'i', '1', 'p') }, /* AVC-Intra 100M 720p24/30/60 */
+Isom.c (libavformat):    { AV_CODEC_ID_H264, MKTAG('a', 'i', '1', 'q') }, /* AVC-Intra 100M 720p25/50 */
+Isom.c (libavformat):    { AV_CODEC_ID_H264, MKTAG('a', 'i', '1', '2') }, /* AVC-Intra 100M 1080p25/50 */
+Isom.c (libavformat):    { AV_CODEC_ID_H264, MKTAG('a', 'i', '1', '3') }, /* AVC-Intra 100M 1080p24/30/60 */
+Isom.c (libavformat):    { AV_CODEC_ID_H264, MKTAG('a', 'i', '1', '5') }, /* AVC-Intra 100M 1080i50 */
+Isom.c (libavformat):    { AV_CODEC_ID_H264, MKTAG('a', 'i', '1', '6') }, /* AVC-Intra 100M 1080i60 */
+Isom.c (libavformat):    { AV_CODEC_ID_H264, MKTAG('A', 'V', 'i', 'n') }, /* AVC-Intra with implicit SPS/PPS */
+Isom.c (libavformat):    { AV_CODEC_ID_H264, MKTAG('a', 'i', 'v', 'x') }, /* XAVC 4:2:2 10bit */
+Isom.c (libavformat):    { AV_CODEC_ID_H264, MKTAG('r', 'v', '6', '4') }, /* X-Com Radvision */
+Libopenh264enc.c (libavcodec):    .id             = AV_CODEC_ID_H264,
+Libstagefright.cpp (libavcodec):    AV_CODEC_ID_H264,
+Libx264.c (libavcodec):    .id               = AV_CODEC_ID_H264,
+Libx264.c (libavcodec):    .id             = AV_CODEC_ID_H264,
+Matroska.c (libavformat):    {"V_MPEG4/ISO/AVC"  , AV_CODEC_ID_H264},
+Matroskaenc.c (libavformat):    case AV_CODEC_ID_H264:
+Matroskaenc.c (libavformat):    if (codec->codec_id == AV_CODEC_ID_H264 && codec->extradata_size > 0 &&
+Matroskaenc.c (libavformat):                         AV_CODEC_ID_H264 : AV_CODEC_ID_MPEG4,
+Mlvdec.c (libavformat):            vst->codec->codec_id = AV_CODEC_ID_H264;
+Mov.c (libavformat):            codec->codec_id == AV_CODEC_ID_H264 &&
+Mov.c (libavformat):    if (!st->codec->extradata_size && st->codec->codec_id == AV_CODEC_ID_H264 &&
+Movenc.c (libavformat):    if      (track->enc->codec_id == AV_CODEC_ID_H264)      tag = MKTAG('a','v','c','1');
+Movenc.c (libavformat):    { AV_CODEC_ID_H264,     MKTAG('a','v','c','1') },
+Movenc.c (libavformat):                  track->enc->codec_id == AV_CODEC_ID_H264 ||
+Movenc.c (libavformat):        else if (track->enc->codec_id == AV_CODEC_ID_H264)
+Movenc.c (libavformat):    { AV_CODEC_ID_H264,     MKTAG('a','v','c','1') },
+Movenc.c (libavformat):    { AV_CODEC_ID_H264,   MKTAG('a','v','c','1') },
+Movenc.c (libavformat):    else if (track->enc->codec_id == AV_CODEC_ID_H264 && !TAG_IS_AVCI(track->tag)) {
+Movenc.c (libavformat):    if (track->enc->codec_id != AV_CODEC_ID_H264 &&
+Movenc.c (libavformat):            if (track->enc->codec_id == AV_CODEC_ID_H264) {
+Movenc.c (libavformat):        if (st->codec->codec_id == AV_CODEC_ID_H264)
+Movenc.c (libavformat):    if (video_codec->codec_id == AV_CODEC_ID_H264) {
+Movenc.c (libavformat):    if (enc->codec_id == AV_CODEC_ID_H264 && trk->vos_len > 0 && *(uint8_t *)trk->vos_data != 1 && !TAG_IS_AVCI(trk->tag)) {
+Movenc.c (libavformat):                         AV_CODEC_ID_H264 : AV_CODEC_ID_MPEG4,
+Movenc.c (libavformat):                         AV_CODEC_ID_H264 : AV_CODEC_ID_MPEG4,
+Movenc.c (libavformat):                         AV_CODEC_ID_H264 : AV_CODEC_ID_MPEG4,
+Movenc.c (libavformat):    .video_codec       = AV_CODEC_ID_H264,
+Movenc.c (libavformat):    .video_codec       = AV_CODEC_ID_H264,
+Movenc.c (libavformat):    .video_codec       = AV_CODEC_ID_H264,
+Mpeg.c (libavformat):            codec_id = AV_CODEC_ID_H264;
+Mpegenc.c (libavformat):            if (st->codec->codec_id == AV_CODEC_ID_H264)
+Mpegts.c (libavformat):    { 0x1b, AVMEDIA_TYPE_VIDEO, AV_CODEC_ID_H264       },
+Mpegts.c (libavformat):    { 0x20, AVMEDIA_TYPE_VIDEO, AV_CODEC_ID_H264       },
+Mpegts.c (libavformat):            if (st->codec->codec_id == AV_CODEC_ID_H264 &&
+Mpegtsenc.c (libavformat):        case AV_CODEC_ID_H264:
+Mpegtsenc.c (libavformat):    if (st->codec->codec_id == AV_CODEC_ID_H264) {
+Mpegvideo.c (libavcodec):        const int mv_sample_log2 = avctx->codec_id == AV_CODEC_ID_H264 || avctx->codec_id == AV_CODEC_ID_SVQ3 ? 2 : 1;
+Mpegvideo.c (libavcodec):                                   (avctx->codec->id == AV_CODEC_ID_H264 ? 0 : 1);
+Mpegvideo.c (libavcodec):        const int mv_sample_log2 = avctx->codec_id == AV_CODEC_ID_H264 || avctx->codec_id == AV_CODEC_ID_SVQ3 ? 2 : 1;
+Mpegvideo.c (libavcodec):                                   (avctx->codec->id == AV_CODEC_ID_H264 ? 0 : 1);
+Mpegvideo.c (libavcodec):                        avctx->codec->id == AV_CODEC_ID_H264) {
+Mxf.c (libavformat):    { { 0x06,0x0E,0x2B,0x34,0x04,0x01,0x01,0x0A,0x04,0x01,0x02,0x02,0x01,0x32,0x00,0x00 }, 14,       AV_CODEC_ID_H264 }, /* H.264/MPEG-4 AVC Intra */
+Mxf.c (libavformat):    { { 0x06,0x0E,0x2B,0x34,0x04,0x01,0x01,0x0A,0x04,0x01,0x02,0x02,0x01,0x31,0x11,0x01 }, 14,       AV_CODEC_ID_H264 }, /* H.264/MPEG-4 AVC SPS/PPS in-band */
+Mxfdec.c (libavformat):    { { 0x06,0x0e,0x2b,0x34,0x04,0x01,0x01,0x0A,0x04,0x01,0x02,0x02,0x01,0x32,0x00,0x00 }, 14,       AV_CODEC_ID_H264 }, /* H.264/MPEG-4 AVC Intra Profiles */
+Mxfdec.c (libavformat):        } else if (st->codec->codec_id == AV_CODEC_ID_H264) {
+Mxfenc.c (libavformat):    { AV_CODEC_ID_H264,      35 },
+Mxfenc.c (libavformat):    if (st->codec->codec_id != AV_CODEC_ID_H264) {
+Mxfenc.c (libavformat):    } else if (st->codec->codec_id == AV_CODEC_ID_H264) {
+Nutenc.c (libavformat):    } else if (c->codec_id == AV_CODEC_ID_H264) {
+Nvenc.c (libavcodec):    .id = AV_CODEC_ID_H264,
+Pmpdec.c (libavformat):        vst->codec->codec_id = AV_CODEC_ID_H264;
+Pthread_frame.c (libavcodec):            if (p->progress_used[i] && (p->got_frame || p->result<0 || avctx->codec_id != AV_CODEC_ID_H264)) {
+Qsv.c (libavcodec):    case AV_CODEC_ID_H264:
+Qsvdec.c (doc\examples):        if (st->codec->codec_id == AV_CODEC_ID_H264 && !video_st)
+Qsvdec.c (doc\examples):    decoder_ctx->codec_id = AV_CODEC_ID_H264;
+Qsv_h264.c (libavcodec):    s->parser = av_parser_init(AV_CODEC_ID_H264);
+Qsv_h264.c (libavcodec):    .id             = AV_CODEC_ID_H264,
+Qsv_h264.c (libavcodec):    .id             = AV_CODEC_ID_H264,
+Rawenc.c (libavformat):    .video_codec       = AV_CODEC_ID_H264,
+Riff.c (libavformat):    { AV_CODEC_ID_H264,         MKTAG('H', '2', '6', '4') },
+Riff.c (libavformat):    { AV_CODEC_ID_H264,         MKTAG('h', '2', '6', '4') },
+Riff.c (libavformat):    { AV_CODEC_ID_H264,         MKTAG('X', '2', '6', '4') },
+Riff.c (libavformat):    { AV_CODEC_ID_H264,         MKTAG('x', '2', '6', '4') },
+Riff.c (libavformat):    { AV_CODEC_ID_H264,         MKTAG('a', 'v', 'c', '1') },
+Riff.c (libavformat):    { AV_CODEC_ID_H264,         MKTAG('D', 'A', 'V', 'C') },
+Riff.c (libavformat):    { AV_CODEC_ID_H264,         MKTAG('S', 'M', 'V', '2') },
+Riff.c (libavformat):    { AV_CODEC_ID_H264,         MKTAG('V', 'S', 'S', 'H') },
+Riff.c (libavformat):    { AV_CODEC_ID_H264,         MKTAG('Q', '2', '6', '4') }, /* QNAP surveillance system */
+Riff.c (libavformat):    { AV_CODEC_ID_H264,         MKTAG('V', '2', '6', '4') }, /* CCTV recordings */
+Riff.c (libavformat):    { AV_CODEC_ID_H264,         MKTAG('G', 'A', 'V', 'C') }, /* GeoVision camera */
+Riff.c (libavformat):    { AV_CODEC_ID_H264,         MKTAG('U', 'M', 'S', 'V') },
+Riff.c (libavformat):    { AV_CODEC_ID_H264,         MKTAG('I', 'N', 'M', 'C') },
+Rtpdec_h264.c (libavformat):    .codec_id         = AV_CODEC_ID_H264,
+Rtpenc.c (libavformat):    case AV_CODEC_ID_H264:
+Rtpenc.c (libavformat):    case AV_CODEC_ID_H264:
+Rtpenc.c (libavformat):    case AV_CODEC_ID_H264:
+Rtpenc_h264_hevc.c (libavformat):            if (codec == AV_CODEC_ID_H264)
+Rtpenc_h264_hevc.c (libavformat):        if (codec == AV_CODEC_ID_H264) {
+Rtpenc_h264_hevc.c (libavformat):                if (codec == AV_CODEC_ID_H264) {
+Rtpenc_h264_hevc.c (libavformat):        if (codec == AV_CODEC_ID_H264 && (s->flags & FF_RTP_FLAG_H264_MODE0)) {
+Rtpenc_h264_hevc.c (libavformat):        if (codec == AV_CODEC_ID_H264) {
+Sdp.c (libavformat):        case AV_CODEC_ID_H264: {
+Sdr2.c (libavformat):    st->codec->codec_id   = AV_CODEC_ID_H264;
+Sidxindex.c (tools):    case AV_CODEC_ID_H264:
+Smoothstreamingenc.c (libavformat):    if (codec->codec_id == AV_CODEC_ID_H264) {
+Smoothstreamingenc.c (libavformat):            if (st->codec->codec_id == AV_CODEC_ID_H264) {
+Smoothstreamingenc.c (libavformat):    .video_codec    = AV_CODEC_ID_H264,
+Utils.c (libavcodec):    if (s->codec_id == AV_CODEC_ID_H264 || s->lowres)
+Utils.c (libavcodec):          (avctx->codec_id == AV_CODEC_ID_H264 || avctx->codec_id == AV_CODEC_ID_VP6F))) {
+Utils.c (libavformat):        { "h264",      AV_CODEC_ID_H264,       AVMEDIA_TYPE_VIDEO },
+Utils.c (libavformat):    if (st->codec->codec_id != AV_CODEC_ID_H264) return 1;
+Utils.c (libavformat):    int onein_oneout = st->codec->codec_id != AV_CODEC_ID_H264 &&
+Utils.c (libavformat):    int onein_oneout = st->codec->codec_id != AV_CODEC_ID_H264 &&
+Utils.c (libavformat):        c->codec_id == AV_CODEC_ID_H264)
+V4l2-common.c (libavdevice):    { AV_PIX_FMT_NONE,    AV_CODEC_ID_H264,     V4L2_PIX_FMT_H264    },
+V4l2.c (libavdevice):    else if (codec_id == AV_CODEC_ID_H264) {
+Vaapi_h264.c (libavcodec):    .id             = AV_CODEC_ID_H264,
+Vda_h264.c (libavcodec):    .id             = AV_CODEC_ID_H264,
+Vda_h264.c (libavcodec):    .id             = AV_CODEC_ID_H264,
+Vda_h264_dec.c (libavcodec):    .id             = AV_CODEC_ID_H264,
+Vdpau.c (libavcodec):    case AV_CODEC_ID_H264:
+Vdpau_h264.c (libavcodec):    .id             = AV_CODEC_ID_H264,
+Wtvenc.c (libavformat):    } else if (st->codec->codec_id == AV_CODEC_ID_H264) {
